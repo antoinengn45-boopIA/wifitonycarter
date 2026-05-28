@@ -1,0 +1,12 @@
+<button onclick="showQRCode()" class="submit-btn">Se connecter au Wi-Fi</button>
+
+<div id="wifiModal" style="display:none; text-align:center; padding: 20px;">
+    <p>Scannez ce QR Code pour vous connecter :</p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=WIFI:T:WPA;S:NOM_DU_WIFI;P:MOT_DE_PASSE;;" alt="QR Code Wifi">
+</div>
+
+<script>
+    function showQRCode() {
+        document.getElementById('wifiModal').style.display = 'block';
+    }
+</script>
