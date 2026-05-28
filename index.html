@@ -1,0 +1,16 @@
+<div class="level-card" onclick="toggleWifi()" style="margin-top: 2rem; border-color: var(--accent);">
+    <div class="level-pct">📶</div>
+    <div class="level-sub">Connexion<br>Wi-Fi rapide</div>
+</div>
+
+<div id="wifiModal" style="display:none; text-align:center; padding: 20px; background: var(--bg2); margin-top: 1rem; border-radius: 12px;">
+    <p style="margin-bottom: 15px;">Scannez pour vous connecter :</p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=WIFI:T:WPA;S:Famille Nguyen;P:Antoinexavier@2103;;" alt="QR Code">
+</div>
+
+<script>
+    function toggleWifi() {
+        const modal = document.getElementById('wifiModal');
+        modal.style.display = (modal.style.display === 'none') ? 'block' : 'none';
+    }
+</script>
